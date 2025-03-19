@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-error.log
+pnpm-debug.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database files
+*.sqlite
+*.sqlite-journal
+/data/db/
+
+# Compiled output
+dist/
+build/
+.out/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
