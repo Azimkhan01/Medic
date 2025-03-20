@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { parseStringPromise } = require('xml2js'); // Import xml2js
 const medic = require('../controller/medic');
 const list = require('../controller/list');
+const similar = require('../controller/similar');
 // router.get('/data/:name', async (req, res) => {
 //     const name = req.params.name
 //     try {
@@ -34,5 +35,6 @@ const list = require('../controller/list');
 
 router.route("/medic").get(medic)
 router.route("/list").get(list)
+router.route("/similar").get(similar)
 
 module.exports = router;
