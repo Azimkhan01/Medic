@@ -3,6 +3,7 @@ const { parseStringPromise } = require('xml2js'); // Import xml2js
 const medic = require('../controller/medic');
 const list = require('../controller/list');
 const similar = require('../controller/similar');
+const ai = require('../controller/ai');
 // router.get('/data/:name', async (req, res) => {
 //     const name = req.params.name
 //     try {
@@ -36,5 +37,6 @@ const similar = require('../controller/similar');
 router.route("/medic").get(medic)
 router.route("/list").get(list)
 router.route("/similar").get(similar)
+router.route("/ai").get(ai)
 
 module.exports = router;
